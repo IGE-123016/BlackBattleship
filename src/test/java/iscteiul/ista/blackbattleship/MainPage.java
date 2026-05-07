@@ -7,17 +7,21 @@ import org.openqa.selenium.support.PageFactory;
 
 // page_url = https://www.jetbrains.com/
 public class MainPage {
-    @FindBy(xpath = "//*[@data-test-marker='Developer Tools']")
-    public WebElement seeDeveloperToolsButton;
+    // Robust locators using text and common attributes
+    @FindBy(xpath = "//*[contains(@data-test, 'main-menu-item') and contains(., 'Products')] | //button[contains(., 'Products')]")
+    public WebElement productsMenu;
 
-    @FindBy(xpath = "//*[@data-test='suggestion-action']")
+    @FindBy(xpath = "//*[contains(@data-test, 'suggestion-action')] | //*[contains(text(), 'Find your tool')]")
     public WebElement findYourToolsButton;
 
-    @FindBy(xpath = "//div[@data-test='main-menu-item' and @data-test-marker = 'Developer Tools']")
-    public WebElement toolsMenu;
-
-    @FindBy(css = "[data-test='site-header-search-action']")
+    @FindBy(css = "[data-test='site-header-search-action'], button[aria-label*='search']")
     public WebElement searchButton;
+
+    @FindBy(css = "input[type='search'], input[data-test='search-input'], .js-search-input")
+    public WebElement searchInput;
+
+    @FindBy(css = "button[data-test='full-search-button'], button[type='submit']")
+    public WebElement fullSearchButton;
 
     public MainPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
