@@ -1,5 +1,6 @@
-package iscteiul.ista.blackbattleship;
+package iscteiul.ista.blackbattleship.selenium.tests;
 
+import iscteiul.ista.blackbattleship.selenium.pages.MainPage;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -1,5 +1,7 @@
-package iscteiul.ista.blackbattleship;
+package iscteiul.ista.blackbattleship.selenium.tests;
 
+import iscteiul.ista.blackbattleship.selenium.pages.LoginPage;
+import iscteiul.ista.blackbattleship.selenium.pages.UserStory11;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -9,7 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.Dimension;
+
 import java.time.Duration;
 
 /**

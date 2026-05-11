@@ -1,5 +1,7 @@
-package iscteiul.ista.blackbattleship;
+package iscteiul.ista.blackbattleship.selenium.tests;
 
+import iscteiul.ista.blackbattleship.selenium.pages.LoginPage;
+import iscteiul.ista.blackbattleship.selenium.pages.UserStory8;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
