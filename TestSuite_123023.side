@@ -1,0 +1,1237 @@
+{
+  "id": "4921d2e5-154e-4e6b-ba90-80aaa2041d05",
+  "version": "2.0",
+  "name": "TestSuite_123023",
+  "url": "https://papergames.io",
+  "tests": [{
+    "id": "8157a2da-72ed-45fa-9d99-5f4088e4b21e",
+    "name": "UserStoryTest1",
+    "commands": [{
+      "id": "dfc1517a-826e-411c-9c5d-0f9d1de2b455",
+      "comment": "",
+      "command": "open",
+      "target": "/en/battleship",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc8b5bab-7398-4068-bfdb-6a469c2caabf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "782x823",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba718cce-1b19-4f35-8c4f-204688a38074",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fc-cta-consent > .fc-button-label",
+      "targets": [
+        ["css=.fc-cta-consent > .fc-button-label", "css:finder"],
+        ["xpath=//button/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Consent')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "125901bb-9e09-49da-8232-d4ab645c3b56",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-secondary:nth-child(2)",
+      "targets": [
+        ["css=.btn-secondary:nth-child(2)", "css:finder"],
+        ["xpath=//app-juicy-button[4]/button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fea226c7-a0e4-4d73-9828-005d82269801",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn-secondary:nth-child(2)",
+      "targets": [
+        ["css=.btn-secondary:nth-child(2)", "css:finder"],
+        ["xpath=//app-juicy-button[4]/button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f57e3370-ae5b-4d73-891f-6e5edb71fd47",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8aca47e7-c343-4efd-9584-fe7f1359b0e4",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input-xl",
+      "targets": [
+        ["css=.input-xl", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/section/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "123023"
+    }, {
+      "id": "d72430fb-76e7-48e0-b7b8-66d09d1a4b92",
+      "comment": "",
+      "command": "click",
+      "target": "css=.p-3 > .btn",
+      "targets": [
+        ["css=.p-3 > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/footer/button", "xpath:idRelative"],
+        ["xpath=//footer/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5761bc49-3b95-4c3f-84f6-bcffa270674b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.p-3 > .btn",
+      "targets": [
+        ["css=.p-3 > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/footer/button", "xpath:idRelative"],
+        ["xpath=//footer/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2588ce7f-e796-475d-85a1-8f2719243031",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-secondary > .edge",
+      "targets": [
+        ["css=.btn-secondary > .edge", "css:finder"],
+        ["xpath=//app-juicy-button[4]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d86b25e2-c678-4e10-8790-db33631717d5",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn-secondary > .edge",
+      "targets": [
+        ["css=.btn-secondary > .edge", "css:finder"],
+        ["xpath=//app-juicy-button[4]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d25c31be-d7dd-4a6b-afbd-da90831daa3b",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=24",
+      "targets": [
+        ["index=24"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f629a70-1877-47ff-ac07-afc3d471d5cc",
+      "comment": "",
+      "command": "click",
+      "target": "id=mediago-title",
+      "targets": [
+        ["id=mediago-title", "id"],
+        ["css=#mediago-title", "css:finder"],
+        ["xpath=//div[@id='mediago-title']", "xpath:attributes"],
+        ["xpath=//div[@id='mgcontainer-16d9a3f2fd61404232b17cb5c48ea4fd']/a/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2217",
+      "windowTimeout": 2000
+    }, {
+      "id": "1e711360-62c8-45b7-9697-271b28a46a71",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2217}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "cf48ed4e-468a-4b26-b81a-f5a60e52cfa8",
+    "name": "UserStoryTest2",
+    "commands": [{
+      "id": "c2e08b57-b22e-402d-a98b-3b5be9f4b2ac",
+      "comment": "",
+      "command": "open",
+      "target": "/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "83f55e18-9c75-4562-8aae-dba648d96c97",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "784x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9aab49a4-ea0a-4d8b-9d04-4155a3cbc516",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.game-item:nth-child(1) .text-light",
+      "targets": [
+        ["css=.game-item:nth-child(1) .text-light", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Battleship')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b798e038-45d7-4b3f-9fc1-d84f49f85cad",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.game-item:nth-child(1) .text-light",
+      "targets": [
+        ["css=.game-item:nth-child(1) .text-light", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Battleship')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "549c5160-7da5-4df9-a29f-5151d63599b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.game-item:nth-child(1) .img-container",
+      "targets": [
+        ["css=.game-item:nth-child(1) .img-container", "css:finder"],
+        ["xpath=//a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a37a54ad-a929-4395-85a8-fd3551a645fa",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.w-100:nth-child(1) > .btn-lg > .front",
+      "targets": [
+        ["css=.w-100:nth-child(1) > .btn-lg > .front", "css:finder"],
+        ["xpath=//app-juicy-button/button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e58401a-eb2a-4a90-92a3-9303491eccbc",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.w-100:nth-child(1) > .btn-lg > .front",
+      "targets": [
+        ["css=.w-100:nth-child(1) > .btn-lg > .front", "css:finder"],
+        ["xpath=//app-juicy-button/button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bedf3fb2-2d74-4d41-99b0-d73b5d610874",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ac177ba-0fbe-4959-a00c-be88cf1be3da",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee7b88ab-545b-4bf8-b751-efcd3a4fd0a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9a47487-d13a-4838-b262-f00e57b9f7ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover > .circle",
+      "targets": [
+        ["css=.hover > .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "d160964d-e171-4106-9b50-3fb5a47e2023",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbd91130-1da9-431f-a80b-cdc4939e1d47",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "809f38ac-4763-4e2f-9951-fef77680770f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-2-6 > .intersection",
+      "targets": [
+        ["css=.cell-2-6 > .intersection", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "10540116-c425-452e-81cb-249a79270f47",
+      "comment": "Abre a página do jogo para iniciar uma partida.",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19f2f7a0-109e-4acd-aeca-2e7208b0c373",
+      "comment": "Seleciona uma posição do tabuleiro para simular um disparo.",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c75a18ea-861a-4d3e-9b8d-cc17494c2ab5",
+      "comment": "Realiza nova interação com a área de jogo para validar continuidade da jogada.",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "90a2b158-82c9-45ad-b796-6ae4d55667e8",
+    "name": "UserStoryTest7",
+    "commands": [{
+      "id": "21adbe90-41a5-421a-bc9f-60ddfa1fc2d8",
+      "comment": "",
+      "command": "open",
+      "target": "/en/battleship",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b9cc1c6-fc8c-4b68-b17d-eeec69500994",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "784x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "407d87cb-1be5-4c24-b396-e1eae5802c93",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.me-2 > .fa-user-group",
+      "targets": [
+        ["css=.me-2 > .fa-user-group", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "cef38615-8b02-45b5-8fb1-15dc1928a153",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.me-2 > .fa-user-group",
+      "targets": [
+        ["css=.me-2 > .fa-user-group", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "36ef0f59-2121-4886-915e-29d774c826bb",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f5503ca-a6a0-4e6d-b28c-75ae2463525e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-secondary:nth-child(2)",
+      "targets": [
+        ["css=.btn-secondary:nth-child(2)", "css:finder"],
+        ["xpath=//app-juicy-button[4]/button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79e2425c-979f-48be-955c-44f936602378",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn-secondary:nth-child(2)",
+      "targets": [
+        ["css=.btn-secondary:nth-child(2)", "css:finder"],
+        ["xpath=//app-juicy-button[4]/button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f84a98db-bd70-4101-a115-a8d23af13dd3",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-secondary > .edge",
+      "targets": [
+        ["css=.btn-secondary > .edge", "css:finder"],
+        ["xpath=//app-juicy-button[4]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2c54599-565f-4a4e-bdab-7e5b6cf840df",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pg-content",
+      "targets": [
+        ["css=.pg-content", "css:finder"],
+        ["xpath=//app-game-landing/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a023c1b3-4640-4e32-924f-5830994d31e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-100:nth-child(2) > .btn > .front",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn > .front", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1322de3-af9b-4ea9-8fdd-65ee679f23ff",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "eaf447f0-8415-46f2-8227-ff1f9ebae006",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f355bec8-148e-4313-a5ff-90ca2ff8a09e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d77374d-d3b6-43f4-821b-0837216cfa50",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b4dbb66-cab7-476e-a10d-e8ce52706c4e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "75c7ad2b-751f-4cd0-8c30-44b65d3b532a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b14e80e-24b7-4ec9-b017-9be489985f39",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e1549ee-d584-40fe-a3b1-67bddc0047cd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a7d3f69-2546-445a-afbf-6007345578b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d3d9632-d6de-441a-8701-1fe4ccda626e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "acfd68d9-834c-4db8-b562-54a62caecd59",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e20bfbd-0f0f-4802-bd2c-7ca8507df619",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcde12a0-b322-4bd4-8e16-08b531f22eb6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1884df61-6739-4884-b49a-730e05fed953",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-question > path",
+      "targets": [
+        ["css=.fa-question > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "10f050eb-75d0-4a8c-b892-eaa5f49333ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=.weapon-button:nth-child(2) > .badge",
+      "targets": [
+        ["css=.weapon-button:nth-child(2) > .badge", "css:finder"],
+        ["xpath=//div[@id='player_weapons']/button[2]/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1e53928-917c-4544-8f3d-86d537f7f5b0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.is-selected > img",
+      "targets": [
+        ["css=.is-selected > img", "css:finder"],
+        ["xpath=//img[@alt='missile']", "xpath:img"],
+        ["xpath=//div[@id='player_weapons']/button[2]/img", "xpath:idRelative"],
+        ["xpath=//button[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3104a75a-6796-4566-b2cb-8ab3c069cecc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-4-4 > .hover",
+      "targets": [
+        ["css=.cell-4-4 > .hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2233173-43f4-42da-8f26-2d9d71fe3c46",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.weapon-button:nth-child(3)",
+      "targets": [
+        ["css=.weapon-button:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='player_weapons']/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cc5427f-8e7f-4138-ac37-32af168238d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e726bfa0-b206-4ffc-9b85-a41ac99d4a0b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8428acdf-7a89-49c1-b5cf-c7bc81ffe9d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8dfe54af-78b8-45c4-b65e-1d9bee80ebaf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.weapon-button:nth-child(3) > img",
+      "targets": [
+        ["css=.weapon-button:nth-child(3) > img", "css:finder"],
+        ["xpath=(//img[@alt='fragment-bomb'])[2]", "xpath:img"],
+        ["xpath=//div[@id='player_weapons']/button[3]/img", "xpath:idRelative"],
+        ["xpath=//button[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2effb49-3a38-47c6-a52a-0672c3871f11",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-question",
+      "targets": [
+        ["css=.fa-question", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2c87ef4-90fc-4312-aa0d-244b6024ca35",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.cell-9-6 img",
+      "targets": [
+        ["css=.cell-9-6 img", "css:finder"],
+        ["xpath=//img[@alt='nuclear-bomb']", "xpath:img"],
+        ["xpath=//table[@id='board_ai-1778944769158-4umq9a']/tr[10]/td[7]/div/img", "xpath:idRelative"],
+        ["xpath=//td[7]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d359cd9-07af-42be-9058-69acf7a23072",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.animated > .circle",
+      "targets": [
+        ["css=.animated > .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "564f87b1-2de8-432c-8c77-b6ac3e7a3278",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(10) > .null:nth-child(7)",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(10) > .null:nth-child(7)", "css:finder"],
+        ["xpath=//table[@id='board_ai-1778944769158-4umq9a']/tr[10]/td[7]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/app-battleship-board/table/tr[10]/td[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d1da66a-eb26-4e58-a656-f9ea39143b9d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.is-selected",
+      "targets": [
+        ["css=.is-selected", "css:finder"],
+        ["xpath=//div[@id='player_weapons']/button", "xpath:idRelative"],
+        ["xpath=//app-weapons/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7579e5d9-493c-465a-b964-f4d713c86600",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d9d275c-a660-4e5b-9989-3aa942ef28c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "08124de8-e48a-4e16-aada-a2df9bd0833c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "874a4164-4203-42f7-9434-e722030f41db",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-gray-1",
+      "targets": [
+        ["css=.bg-gray-1", "css:finder"],
+        ["xpath=//div[@id='battleships']/div/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f521b3af-3078-4b4a-8cfa-bac54aca8c66",
+      "comment": "Abre a página de uma partida de Battleship.",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39ee1981-3b5b-4367-bf82-707dac2d2b4e",
+      "comment": "Valida que existe uma área jogável onde a condição de vitória pode ser alcançada.",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0f7c45c-e86b-49cc-8e57-fd35f63fa607",
+      "comment": "Verifica a existência de elementos de estado necessários para comunicar o progresso ou fim da partida.",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6689c498-3c9b-4e53-b566-42028ab5f950",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=8root",
+      "targets": [
+        ["index=8root"]
+      ],
+      "value": ""
+    }, {
+      "id": "d24d380e-d71a-4a7a-ba57-e2689748b9be",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=8",
+      "targets": [
+        ["index=8"]
+      ],
+      "value": ""
+    }, {
+      "id": "b915e2a3-bba5-4f68-86f9-28c0117538a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.continue-prompt-text",
+      "targets": [
+        ["css=.continue-prompt-text", "css:finder"],
+        ["xpath=//div[@id='dismiss-button-element']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7769b985-a2d8-4454-a2a3-01204af48160",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "f488d2a3-f02f-435d-a9d9-c8b76528f610",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "3992d667-9de7-4241-89ce-d9efd365cc51",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.is-selected > img",
+      "targets": [
+        ["css=.is-selected > img", "css:finder"],
+        ["xpath=//img[@alt='default']", "xpath:img"],
+        ["xpath=//div[@id='player_weapons']/button/img", "xpath:idRelative"],
+        ["xpath=//button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69c3e42d-9882-4a36-bf1d-47ae48c5c4cd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//span/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Resign')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7dbc131b-a1b8-42a7-a4cf-07aa01555a79",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//span/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Resign')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "965c6b4f-31d8-4391-8880-7bddf1427605",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.flex-grow-1 > .btn",
+      "targets": [
+        ["css=.flex-grow-1 > .btn", "css:finder"],
+        ["xpath=//span/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Resign')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b7c16de-0fdd-4e71-8d33-2a491a265118",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp1']/div/div/app-confirm-leave-dialog/app-dialog-layout/div/footer/button[2]", "xpath:idRelative"],
+        ["xpath=//footer/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5679f4a9-663a-4990-be43-e19c9b462858",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.pg-card > .w-100:nth-child(1) .flex-grow-1",
+      "targets": [
+        ["css=.pg-card > .w-100:nth-child(1) .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa611f38-7e30-4257-8416-867d2e1ececc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pg-card > .w-100:nth-child(1) .flex-grow-1",
+      "targets": [
+        ["css=.pg-card > .w-100:nth-child(1) .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e670ef5d-74f8-4a31-ae6c-b8118f6b334e",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.pg-card > .w-100:nth-child(1) .flex-grow-1",
+      "targets": [
+        ["css=.pg-card > .w-100:nth-child(1) .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea1c9244-4a48-4cfb-b67e-f1c6ef17604b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-dark",
+      "targets": [
+        ["css=.btn-outline-dark", "css:finder"],
+        ["xpath=//span/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Leave room')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "696d8921-30dc-49e4-9922-84c2923210e6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.gap-3 > .ng-fa-icon",
+      "targets": [
+        ["css=.gap-3 > .ng-fa-icon", "css:finder"],
+        ["xpath=//span[2]/span/fa-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fbd17c8-5c9e-4fa3-b76f-aa5ee66a1d23",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.gap-3 > .ng-fa-icon",
+      "targets": [
+        ["css=.gap-3 > .ng-fa-icon", "css:finder"],
+        ["xpath=//span[2]/span/fa-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "287d9329-6d28-4a91-97f2-bdf3455a042d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-secondary:nth-child(2)",
+      "targets": [
+        ["css=.btn-secondary:nth-child(2)", "css:finder"],
+        ["xpath=//app-juicy-button[4]/button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cbf7031-d09f-4210-b3b7-b4b0baddd2ce",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn-secondary:nth-child(2)",
+      "targets": [
+        ["css=.btn-secondary:nth-child(2)", "css:finder"],
+        ["xpath=//app-juicy-button[4]/button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ebe084c-a807-4308-99e0-c947e4845d06",
+      "comment": "",
+      "command": "click",
+      "target": "css=.d-flex > .fw-normal:nth-child(1)",
+      "targets": [
+        ["css=.d-flex > .fw-normal:nth-child(1)", "css:finder"],
+        ["xpath=//span[2]/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0e11052-1a15-41c8-81f9-943ec3e11cb4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cancel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbfb8e3c-2487-4821-ad09-d02d981136fe",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cancel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "85b1cea7-f42c-478b-bcfa-532b1f05eecf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b36f14ca-1950-4610-a95e-4e194ed3855f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c4117f0-8d7f-4465-9290-9efd5df44247",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.is-selected > img",
+      "targets": [
+        ["css=.is-selected > img", "css:finder"],
+        ["xpath=//img[@alt='default']", "xpath:img"],
+        ["xpath=//div[@id='player_weapons']/button/img", "xpath:idRelative"],
+        ["xpath=//button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f407e75f-4fa0-421e-9b71-e9f11f9f0110",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "649ca295-0c6e-450e-a5a2-7fb05c2b2886",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(7) > .undefined:nth-child(6) > .intersection",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(7) > .undefined:nth-child(6) > .intersection", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d55ac8e8-8721-43e1-9f41-d874fdf30a7c",
+    "name": "UserStoryTest10",
+    "commands": [{
+      "id": "db53fd01-1790-4154-bc3c-1d0d340fe8f4",
+      "comment": "",
+      "command": "open",
+      "target": "/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eca2ad1e-7fc6-432d-a012-2505a43d2d31",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "784x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed93e77e-afc2-4392-8cd8-f216b229a92a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.game-item:nth-child(1) .thumbnail",
+      "targets": [
+        ["css=.game-item:nth-child(1) .thumbnail", "css:finder"],
+        ["xpath=//a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc6da926-d43a-4d7c-a6e0-855f8f6db2b2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ff3e415-cd73-44f7-b8a4-67c76be53cab",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "194e501a-5519-4b5a-a176-655d12178d51",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-100:nth-child(1) > .btn-lg .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(1) > .btn-lg .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1bca4f23-613f-47e2-a88d-879c119f99dd",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.w-100:nth-child(1) > .btn-lg > .front",
+      "targets": [
+        ["css=.w-100:nth-child(1) > .btn-lg > .front", "css:finder"],
+        ["xpath=//app-juicy-button/button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9aa2097-2c92-4230-a4f3-415f8bf8a9ac",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.w-100:nth-child(1) > .btn-lg > .front",
+      "targets": [
+        ["css=.w-100:nth-child(1) > .btn-lg > .front", "css:finder"],
+        ["xpath=//app-juicy-button/button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03f09330-30d1-4ed9-8527-99d850c617f1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.w-100:nth-child(2) > .btn > .front",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn > .front", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bccc9f10-dcdf-486d-8a20-d6bed8af5d33",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-dark",
+      "targets": [
+        ["css=.btn-outline-dark", "css:finder"],
+        ["xpath=//span/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Leave room')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "67e3a112-c162-425f-be46-212c560ef5b5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.fw-normal:nth-child(2)",
+      "targets": [
+        ["css=.fw-normal:nth-child(2)", "css:finder"],
+        ["xpath=//span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d834b179-dc4b-41d3-b97d-c0cab7010473",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.fw-normal:nth-child(2)",
+      "targets": [
+        ["css=.fw-normal:nth-child(2)", "css:finder"],
+        ["xpath=//span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c40ff2ef-e33b-4c2d-8f08-b2bfbcb70f96",
+      "comment": "",
+      "command": "click",
+      "target": "css=.d-flex > .fw-normal:nth-child(1)",
+      "targets": [
+        ["css=.d-flex > .fw-normal:nth-child(1)", "css:finder"],
+        ["xpath=//span[2]/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0562b3dc-8f43-4ff9-8c40-322d8b0f973b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//span/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Abort game')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fedfd0ae-105c-4bcf-a6be-0ee453555ccc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-confirm-leave-dialog/app-dialog-layout/div/footer/button[2]", "xpath:idRelative"],
+        ["xpath=//footer/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aef948ac-6df1-4853-8f96-ddc78139b5f1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-secondary:nth-child(2)",
+      "targets": [
+        ["css=.btn-secondary:nth-child(2)", "css:finder"],
+        ["xpath=//app-juicy-button[4]/button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf72d487-8115-4155-8adc-ffcd7212bf7e",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn-secondary:nth-child(2)",
+      "targets": [
+        ["css=.btn-secondary:nth-child(2)", "css:finder"],
+        ["xpath=//app-juicy-button[4]/button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63537256-bb52-4ea2-89f2-df6838caf1b7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.pg-card > .w-100:nth-child(1) .flex-grow-1",
+      "targets": [
+        ["css=.pg-card > .w-100:nth-child(1) .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3429df3-fdda-405c-944c-5b11c851bea6",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.pg-card > .w-100:nth-child(1) .flex-grow-1",
+      "targets": [
+        ["css=.pg-card > .w-100:nth-child(1) .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a187b5d-128a-4cfa-9318-841be331d118",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pg-card > .w-100:nth-child(1) .flex-grow-1",
+      "targets": [
+        ["css=.pg-card > .w-100:nth-child(1) .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40df2877-1a97-436c-92d9-90fe66099df5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.front",
+      "targets": [
+        ["css=.front", "css:finder"],
+        ["xpath=//app-juicy-button/button/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,' Invite a friend')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89d36bdc-4335-4ab6-8524-ccc5ea030842",
+      "comment": "Abre a página do jogo online.",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eed4fc82-87b4-4b93-bedb-6bc917991544",
+      "comment": "Procura ou interage com controlos associados a criar uma partida com outro jogador.",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39d05e27-be94-4386-9e16-3c139adc40d3",
+      "comment": "Valida a existência de elementos de interação compatíveis com convite ou partilha de jogo.",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "950869df-d16b-4bd4-9d46-239e20556328",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8157a2da-72ed-45fa-9d99-5f4088e4b21e"]
+  }],
+  "urls": ["https://papergames.io/"],
+  "plugins": []
+}

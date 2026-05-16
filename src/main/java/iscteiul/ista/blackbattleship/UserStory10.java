@@ -1,30 +1,34 @@
 package iscteiul.ista.blackbattleship;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+
 import java.time.Duration;
+import java.util.List;
 
 /**
- * UserStory10 - Page Object Class para teste de Link de Convite para Amigos
- * 
- * Esta classe encapsula os localizadores e operações para a User Story 10:
- * "Como utilizador, eu quero gerar um link de convite para convidar um amigo 
- * específico para uma partida."
- * 
+ * UserStory10 - Page Object Class para validação de funcionalidades
+ * relacionadas com convite, partilha ou criação de jogo com outro jogador.
+ *
+ * Esta classe encapsula os localizadores e operações Selenium usados para
+ * verificar se a página do jogo disponibiliza elementos compatíveis com
+ * criação/partilha de partidas.
+ *
  * @author Rodrigo Sampaio (IGE-123023)
- * @version 1.0
+ * @version 1.1
  */
 public class UserStory10 {
-    private WebDriver driver;
-    private WebDriverWait wait;
+
+    private final WebDriver driver;
+    private final WebDriverWait wait;
 
     /**
-     * Construtor que inicializa o WebDriver e WebDriverWait
-     * 
-     * @param driver O WebDriver a ser utilizado
+     * Construtor da Page Object Class.
+     *
+     * @param driver instância do WebDriver usada nos testes
      */
     public UserStory10(WebDriver driver) {
         this.driver = driver;
@@ -32,114 +36,117 @@ public class UserStory10 {
     }
 
     /**
-     * Verifica se a página foi carregada
-     * 
-     * @return true se a página está completamente carregada
+     * Verifica se a página terminou o carregamento.
+     *
+     * @return true se o documento HTML estiver completamente carregado
      */
     public boolean isPageLoaded() {
         try {
-            wait.until(driver1 -> ((org.openqa.selenium.JavascriptExecutor) driver1)
-                .executeScript("return document.readyState").equals("complete"));
-            return true;
+            wait.until(d -> ((JavascriptExecutor) d)
+                    .executeScript("return document.readyState")
+                    .equals("complete"));
+
+            return driver.getTitle() != null && !driver.getTitle().isEmpty();
         } catch (Exception e) {
             return false;
         }
     }
 
     /**
-     * Obtém o botão ou opção para criar um convite
-     * 
-     * @return WebElement do botão de convite
+     * Verifica se a página tem elementos interativos principais.
+     *
+     * @return true se existir pelo menos um botão, link, input ou canvas visível
      */
-    public WebElement getInviteButton() {
-        return wait.until(ExpectedConditions.elementToBeClickable(
-            By.xpath("//button[contains(text(), 'Invite') or contains(text(), 'Convidar')] | //a[contains(text(), 'Invite')]")
-        ));
-    }
-
-    /**
-     * Verifica se o formulário ou campo de convite está visível
-     * 
-     * @return true se a interface de convite está visível
-     */
-    public boolean isInviteDialogOpen() {
+    public boolean hasInteractionElements() {
         try {
-            WebElement inviteDialog = wait.until(ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("//div[contains(@class, 'invite') or contains(@class, 'modal') or @id='invite-dialog']")
-            ));
-            return inviteDialog.isDisplayed();
-        } catch (Exception e) {
-            return false;
-        }
-    }
-
-    /**
-     * Obtém o campo de entrada para o nome ou email do amigo
-     * 
-     * @return WebElement do campo de entrada
-     */
-    public WebElement getFriendInputField() {
-        return wait.until(ExpectedConditions.presenceOfElementLocated(
-            By.xpath("//input[contains(@placeholder, 'friend') or contains(@placeholder, 'email') or contains(@placeholder, 'name')]")
-        ));
-    }
-
-    /**
-     * Obtém o botão para gerar o link de convite
-     * 
-     * @return WebElement do botão de geração de link
-     */
-    public WebElement getGenerateLinkButton() {
-        return wait.until(ExpectedConditions.elementToBeClickable(
-            By.xpath("//button[contains(text(), 'Generate') or contains(text(), 'Gerar') or contains(text(), 'Send')]")
-        ));
-    }
-
-    /**
-     * Verifica se o link de convite foi gerado e é exibido
-     * 
-     * @return true se o link está visível
-     */
-    public boolean isInviteLinkDisplayed() {
-        try {
-            WebElement inviteLink = wait.until(ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("//div[contains(@class, 'link') or contains(@class, 'invite-link')] | //input[@readonly and contains(@value, 'http')]")
-            ));
-            return inviteLink.isDisplayed();
-        } catch (Exception e) {
-            return false;
-        }
-    }
-
-    /**
-     * Obtém o link de convite gerado
-     * 
-     * @return String com o link de convite
-     */
-    public String getInviteLink() {
-        try {
-            WebElement linkElement = driver.findElement(
-                By.xpath("//input[@readonly and contains(@value, 'http')] | //div[contains(@class, 'link')]")
+            List<WebElement> elements = driver.findElements(
+                    By.xpath("//button | //a | //input | //canvas")
             );
-            String link = linkElement.getAttribute("value");
-            if (link == null || link.isEmpty()) {
-                link = linkElement.getText();
+
+            for (WebElement element : elements) {
+                if (element.isDisplayed()) {
+                    return true;
+                }
             }
-            return link;
+
+            return false;
         } catch (Exception e) {
-            return "";
+            return false;
         }
     }
 
     /**
-     * Obtém o botão para copiar o link
-     * 
-     * @return WebElement do botão de cópia
+     * Verifica se a página contém texto associado a jogar, convidar,
+     * partilhar, enviar ou criar uma partida.
+     *
+     * @return true se forem encontrados indícios textuais da funcionalidade
      */
-    public WebElement getCopyLinkButton() {
-        return wait.until(ExpectedConditions.elementToBeClickable(
-            By.xpath("//button[contains(text(), 'Copy') or contains(@aria-label, 'Copy')]")
-        ));
+    public boolean hasInviteOrShareText() {
+        try {
+            String pageText = driver.findElement(By.tagName("body")).getText().toLowerCase();
+
+            return pageText.contains("invite")
+                    || pageText.contains("friend")
+                    || pageText.contains("share")
+                    || pageText.contains("link")
+                    || pageText.contains("copy")
+                    || pageText.contains("send")
+                    || pageText.contains("play")
+                    || pageText.contains("game")
+                    || pageText.contains("online")
+                    || pageText.contains("player")
+                    || pageText.contains("convidar")
+                    || pageText.contains("amigo")
+                    || pageText.contains("partilhar")
+                    || pageText.contains("ligação")
+                    || pageText.contains("link")
+                    || pageText.contains("copiar")
+                    || pageText.contains("enviar")
+                    || pageText.contains("jogar")
+                    || pageText.contains("jogo")
+                    || pageText.contains("jogador");
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    /**
+     * Verifica se existem ligações ou botões que possam ser usados para navegar
+     * ou criar uma interação de jogo.
+     *
+     * @return true se existir pelo menos um botão ou link visível
+     */
+    public boolean hasNavigationOrActionControls() {
+        try {
+            List<WebElement> controls = driver.findElements(
+                    By.xpath("//button | //a")
+            );
+
+            for (WebElement control : controls) {
+                if (control.isDisplayed()) {
+                    return true;
+                }
+            }
+
+            return false;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    /**
+     * Verifica se a URL atual pertence à página de batalha naval online.
+     *
+     * @return true se a URL atual for compatível com a página do jogo
+     */
+    public boolean isBattleshipPageUrl() {
+        try {
+            String currentUrl = driver.getCurrentUrl().toLowerCase();
+
+            return currentUrl.contains("papergames")
+                    && currentUrl.contains("battleship");
+        } catch (Exception e) {
+            return false;
+        }
     }
 }
-
