@@ -1,9 +1,8 @@
 package iscteiul.ista.blackbattleship.selenide123010.pages;
 
-import com.codeborne.selenide.ClickOptions;
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
-import org.openqa.selenium.Keys;
 
 import java.time.Duration;
 
@@ -15,14 +14,14 @@ import static com.codeborne.selenide.Selenide.*;
  */
 public class UserStory14Page extends BaseSelenidePage {
 
-    private final SelenideElement createTournamentLink =
-            $x("//span[contains(.,'Create tournament')] | //a[contains(@href,'tournament')]");
+    private final ElementsCollection createTournamentLinks =
+            $$x("//span[contains(.,'Create tournament')] | //a[contains(@href,'tournament')]");
     private final SelenideElement gameSelect =
             $("div:nth-child(1) > .mat-mdc-form-field .mat-mdc-form-field-infix");
     private final SelenideElement battleshipOption =
             $x("//*[contains(@id,'mat-option') and contains(.,'Battleship')]");
-    private final SelenideElement tournamentNameInput =
-            $x("//input[contains(@id,'mat-input') and not(@type='hidden')]");
+    private final ElementsCollection tournamentNameInputs =
+            $$x("//input[contains(@id,'mat-input') and not(@type='hidden')]");
     private final SelenideElement matchesPerRoundSelect = $("#mat-select-value-serverApp2");
     private final SelenideElement bestOfFiveOption =
             $x("//*[contains(@id,'mat-option') and contains(.,'Best of 5')]");
@@ -30,20 +29,11 @@ public class UserStory14Page extends BaseSelenidePage {
             $x("//button[contains(.,'Create and share')]");
 
     /**
-     * Opens the Battleship page.
-     */
-    @Step("Open Battleship page")
-    public void openBattleshipPage() {
-        open("https://papergames.io/en/battleship");
-    }
-
-    /**
      * Opens the create tournament form.
      */
     @Step("Open create tournament flow")
     public void openCreateTournament() {
-        createTournamentLink.shouldBe(visible, Duration.ofSeconds(15))
-                .click(ClickOptions.usingJavaScript());
+        clickAfterConsent(createTournamentLinks.findBy(visible));
         gameSelect.shouldBe(visible, Duration.ofSeconds(15));
     }
 
@@ -52,10 +42,8 @@ public class UserStory14Page extends BaseSelenidePage {
      */
     @Step("Select Battleship game")
     public void selectBattleshipGame() {
-        gameSelect.shouldBe(visible, Duration.ofSeconds(15))
-                .click(ClickOptions.usingJavaScript());
-        battleshipOption.shouldBe(visible, Duration.ofSeconds(15))
-                .click(ClickOptions.usingJavaScript());
+        clickAfterConsent(gameSelect);
+        clickAfterConsent(battleshipOption);
     }
 
     /**
@@ -65,7 +53,9 @@ public class UserStory14Page extends BaseSelenidePage {
      */
     @Step("Enter tournament name")
     public void enterTournamentName(String name) {
-        SelenideElement input = tournamentNameInput.shouldBe(visible, Duration.ofSeconds(15));
+        acceptConsentIfPresent();
+        SelenideElement input = tournamentNameInputs.findBy(visible)
+                .shouldBe(visible, Duration.ofSeconds(15));
         try {
             input.setValue(name).pressEnter();
         } catch (Exception e) {
@@ -73,7 +63,9 @@ public class UserStory14Page extends BaseSelenidePage {
                     "arguments[0].value = arguments[1]; arguments[0].dispatchEvent(new Event('input', { bubbles: true }));",
                     input,
                     name);
-            input.sendKeys(Keys.ENTER);
+            executeJavaScript(
+                    "arguments[0].dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true }));",
+                    input);
         }
     }
 
@@ -82,10 +74,8 @@ public class UserStory14Page extends BaseSelenidePage {
      */
     @Step("Select Best of 5")
     public void selectBestOfFive() {
-        matchesPerRoundSelect.shouldBe(visible, Duration.ofSeconds(15))
-                .click(ClickOptions.usingJavaScript());
-        bestOfFiveOption.shouldBe(visible, Duration.ofSeconds(15))
-                .click(ClickOptions.usingJavaScript());
+        clickAfterConsent(matchesPerRoundSelect);
+        clickAfterConsent(bestOfFiveOption);
     }
 
     /**
@@ -93,8 +83,7 @@ public class UserStory14Page extends BaseSelenidePage {
      */
     @Step("Create and share tournament")
     public void createAndShare() {
-        createAndShareButton.shouldBe(visible, Duration.ofSeconds(15))
-                .click(ClickOptions.usingJavaScript());
+        clickAfterConsent(createAndShareButton);
     }
 
     /**

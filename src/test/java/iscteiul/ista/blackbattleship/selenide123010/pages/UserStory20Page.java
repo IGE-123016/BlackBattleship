@@ -1,6 +1,5 @@
 package iscteiul.ista.blackbattleship.selenide123010.pages;
 
-import com.codeborne.selenide.ClickOptions;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
@@ -21,20 +20,11 @@ public class UserStory20Page extends BaseSelenidePage {
     private final SelenideElement soundSwitch = $("#settings-sound-button .mdc-switch__ripple");
 
     /**
-     * Opens the Battleship page.
-     */
-    @Step("Open Battleship page")
-    public void openBattleshipPage() {
-        open("https://papergames.io/en/battleship");
-    }
-
-    /**
      * Opens the settings panel.
      */
     @Step("Open settings panel")
     public void openSettings() {
-        settingsButtons.findBy(visible)
-                .click(ClickOptions.usingJavaScript());
+        clickAfterConsent(settingsButtons.findBy(visible));
         soundButton.shouldBe(visible, Duration.ofSeconds(15));
     }
 
@@ -43,8 +33,7 @@ public class UserStory20Page extends BaseSelenidePage {
      */
     @Step("Toggle sound setting")
     public void toggleSound() {
-        soundSwitch.shouldBe(visible, Duration.ofSeconds(15))
-                .click(ClickOptions.usingJavaScript());
+        clickAfterConsent(soundSwitch);
     }
 
     /**

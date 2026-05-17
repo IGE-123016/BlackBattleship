@@ -1,14 +1,11 @@
 package iscteiul.ista.blackbattleship.selenide123010.pages;
 
-import com.codeborne.selenide.ClickOptions;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
 import io.qameta.allure.Step;
 
-import java.time.Duration;
 import java.util.Set;
 
-import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 
 /**
@@ -20,21 +17,12 @@ public class UserStory24Page extends BaseSelenidePage {
             $x("//img[@alt='Get it on Playstore'] | //img[contains(@alt,'Playstore')]");
 
     /**
-     * Opens the Battleship page.
-     */
-    @Step("Open Battleship page")
-    public void openBattleshipPage() {
-        open("https://papergames.io/en/battleship");
-    }
-
-    /**
      * Opens the mobile app store link and switches to the new window.
      */
     @Step("Open app store link")
     public void openAppStoreLink() {
         Set<String> previousWindows = WebDriverRunner.getWebDriver().getWindowHandles();
-        playStoreBadge.shouldBe(visible, Duration.ofSeconds(15))
-                .click(ClickOptions.usingJavaScript());
+        clickAfterConsent(playStoreBadge);
 
         Wait().until(driver -> driver.getWindowHandles().size() > previousWindows.size());
         for (String window : WebDriverRunner.getWebDriver().getWindowHandles()) {

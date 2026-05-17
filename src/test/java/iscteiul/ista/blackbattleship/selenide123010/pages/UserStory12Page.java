@@ -1,12 +1,8 @@
 package iscteiul.ista.blackbattleship.selenide123010.pages;
 
-import com.codeborne.selenide.ClickOptions;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
-import java.time.Duration;
-
-import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 
 /**
@@ -19,20 +15,11 @@ public class UserStory12Page extends BaseSelenidePage {
     private final SelenideElement emojisCategory = $x("//img[@alt='Emojis'] | //a[contains(@href, '/shop/emojis')]");
 
     /**
-     * Opens the Battleship page.
-     */
-    @Step("Open Battleship page")
-    public void openBattleshipPage() {
-        open("https://papergames.io/en/battleship");
-    }
-
-    /**
      * Opens the shop through the site navigation.
      */
     @Step("Open shop page")
     public void openShop() {
-        shopLink.shouldBe(visible, Duration.ofSeconds(15))
-                .click(ClickOptions.usingJavaScript());
+        clickAfterConsent(shopLink);
         webdriver().driver().url().contains("/shop");
     }
 
@@ -41,8 +28,7 @@ public class UserStory12Page extends BaseSelenidePage {
      */
     @Step("Filter shop by Monsters category")
     public void selectMonstersCategory() {
-        monstersCategory.shouldBe(visible, Duration.ofSeconds(15))
-                .click(ClickOptions.usingJavaScript());
+        clickAfterConsent(monstersCategory);
     }
 
     /**
@@ -50,8 +36,7 @@ public class UserStory12Page extends BaseSelenidePage {
      */
     @Step("Filter shop by Emojis category")
     public void selectEmojisCategory() {
-        emojisCategory.shouldBe(visible, Duration.ofSeconds(15))
-                .click(ClickOptions.usingJavaScript());
+        clickAfterConsent(emojisCategory);
     }
 
     /**
