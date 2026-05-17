@@ -1,7 +1,7 @@
-package iscteiul.ista.blackbattleship.selenide.tests;
+package iscteiul.ista.blackbattleship.selenide123016;
 
 import com.codeborne.selenide.Configuration;
-import iscteiul.ista.blackbattleship.selenide.pages.SelenideUserStory11Page;
+import iscteiul.ista.blackbattleship.selenide.pages.SelenideUserStory8Page;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
 
-public class SelenideUserStory11Test {
+public class SelenideUserStory8Test {
 
     @BeforeAll
     public static void setUp() {
@@ -17,17 +17,14 @@ public class SelenideUserStory11Test {
     }
 
     @Test
-    public void testUserStory11() {
+    public void testUserStory8() {
         open("https://papergames.io/en/battleship");
 
-        SelenideUserStory11Page page = new SelenideUserStory11Page();
+        SelenideUserStory8Page page = new SelenideUserStory8Page();
         iscteiul.ista.blackbattleship.selenide.pages.SelenideLoginPage loginPage = new iscteiul.ista.blackbattleship.selenide.pages.SelenideLoginPage();
         loginPage.createGuestSession("Test");
 
-        page.clickShopTab();
-        page.clickMonstersCategory();
-        page.clickShopTab();
-        page.clickEmojisCategory();
+        page.clickMessagingTab();
     }
 
     @AfterEach

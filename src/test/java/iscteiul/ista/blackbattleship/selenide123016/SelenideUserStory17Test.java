@@ -1,4 +1,4 @@
-package iscteiul.ista.blackbattleship.selenide.tests;
+package iscteiul.ista.blackbattleship.selenide123016;
 
 import com.codeborne.selenide.Configuration;
 import iscteiul.ista.blackbattleship.selenide.pages.SelenideUserStory17Page;
