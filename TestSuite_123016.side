@@ -1,0 +1,281 @@
+{
+  "id": "ca94f284-ed13-4472-8ba7-e536d3a505ae",
+  "version": "2.0",
+  "name": "TestSuite_123016",
+  "url": "https://papergames.io/en/battleship",
+  "tests": [{
+    "id": "59addf67-9e1f-4f5b-84ce-ea417c8d4187",
+    "name": "UserStoryTest8",
+    "commands": [{
+      "id": "8a64165d-07e8-4373-ba27-3101d0bc1728",
+      "comment": "",
+      "command": "open",
+      "target": "https://papergames.io/en/battleship",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cae271e4-0995-44f0-b2bf-6a389e908b24",
+      "comment": "Inicialização da dimensão da janela",
+      "command": "setWindowSize",
+      "target": "1088x766",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "000a3185-f017-4d86-97ce-1f8bc30bac7a",
+      "comment": "Selecionei a aba \"Messaging\"",
+      "command": "click",
+      "target": "linkText=Messaging",
+      "targets": [
+        ["linkText=Messaging", "linkText"],
+        ["css=.cdk-focused", "css:finder"],
+        ["xpath=//a[contains(@href, '/en/chat')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Messaging')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e31e9bdd-6b17-4220-9240-8bf578d9440d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d6eaec52-b79a-45ca-8397-28b63837fe12",
+    "name": "UserStoryTest9",
+    "commands": [{
+      "id": "ee722017-4d61-4084-8d9e-51356a1f364e",
+      "comment": "",
+      "command": "open",
+      "target": "https://papergames.io/en/battleship",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6b94811-bc73-422d-a10a-f568b4198ac3",
+      "comment": "Inicialização da dimensão da janela",
+      "command": "setWindowSize",
+      "target": "1088x766",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ff41086-dcde-4c15-995d-44a8327b9614",
+      "comment": "Selecionei a aba \"Friends\"",
+      "command": "click",
+      "target": "linkText=Friends",
+      "targets": [
+        ["linkText=Friends", "linkText"],
+        ["css=.cdk-focused", "css:finder"],
+        ["xpath=//a[contains(@href, '/en/friends')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Friends')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "77607005-680c-4754-a20f-6208134d92b4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3f2748fa-df8f-4c2f-98f3-d89f7b520303",
+    "name": "UserStoryTest11",
+    "commands": [{
+      "id": "a8707a25-4116-4e57-994c-15b0f57db2b1",
+      "comment": "",
+      "command": "open",
+      "target": "https://papergames.io/en/battleship",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a39ee912-38ec-42f8-8693-22823160a3f7",
+      "comment": "Inicialização da dimensão da janela",
+      "command": "setWindowSize",
+      "target": "1088x766",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e66792b0-12cc-4330-be9c-15f2ccacc601",
+      "comment": "Selecionei a aba \"Shop\"",
+      "command": "click",
+      "target": "linkText=Shop",
+      "targets": [
+        ["linkText=Shop", "linkText"],
+        ["css=.cdk-focused", "css:finder"],
+        ["xpath=//a[contains(@href, '/en/shop')]", "xpath:href"],
+        ["xpath=//ul[2]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Shop')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "57a3ccb6-9e68-411a-aa3c-faade5a281dd",
+      "comment": "Cliquei na opção \"Monsters\"",
+      "command": "click",
+      "target": "css=.box-shadow-1:nth-child(2) .w-75",
+      "targets": [
+        ["css=.box-shadow-1:nth-child(2) .w-75", "css:finder"],
+        ["xpath=//img[@alt='Monsters']", "xpath:img"],
+        ["xpath=//div[2]/a/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc5249a4-ccaa-407e-913f-7ae890a93155",
+      "comment": "Selecionei a aba \"Shop\"",
+      "command": "click",
+      "target": "linkText=Shop",
+      "targets": [
+        ["linkText=Shop", "linkText"],
+        ["css=.cdk-focused", "css:finder"],
+        ["xpath=//a[contains(@href, '/en/shop')]", "xpath:href"],
+        ["xpath=//ul[2]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Shop')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f161f521-ccc0-4224-8ba9-d9259e3d6831",
+      "comment": "Cliquei na opção \"Emojis\"",
+      "command": "click",
+      "target": "css=.box-shadow-1:nth-child(3) .w-75",
+      "targets": [
+        ["css=.box-shadow-1:nth-child(3) .w-75", "css:finder"],
+        ["xpath=//img[@alt='Emojis']", "xpath:img"],
+        ["xpath=//div[3]/a/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3abdc49e-dd37-4fc2-b0a4-372f38cca024",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7c7b1420-e32f-4453-841c-6bba13ef0674",
+    "name": "UserStoryTest17",
+    "commands": [{
+      "id": "71b8aa76-8603-4731-9966-79472af44172",
+      "comment": "",
+      "command": "open",
+      "target": "https://papergames.io/en/battleship",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38a7139c-b6f0-4a1a-9e92-bdad07c50053",
+      "comment": "Inicialização da dimensão da janela",
+      "command": "setWindowSize",
+      "target": "1088x766",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c74a40e6-3c1d-4f54-af99-fc34c25f2a7b",
+      "comment": "Selecionei a aba \"History\"",
+      "command": "click",
+      "target": "linkText=History",
+      "targets": [
+        ["linkText=History", "linkText"],
+        ["css=.cdk-focused", "css:finder"],
+        ["xpath=//a[contains(@href, '/en/match-history')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'History')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7651cf69-7b87-4c0f-be58-05a27fa8ac3d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "82257bdd-b325-469d-a0e6-235789dc656d",
+    "name": "Login",
+    "commands": [{
+      "id": "9f4b8e3e-6284-44f6-baba-ab0210b17722",
+      "comment": "",
+      "command": "open",
+      "target": "https://papergames.io/en/battleship",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f2ea3d8-7202-476b-9816-50381d656507",
+      "comment": "Inicialização da dimensão da janela",
+      "command": "setWindowSize",
+      "target": "1088x766",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f3c7864-77b6-4697-bf5f-90d8e7898fd1",
+      "comment": "Selecionei a opção \"Play vs robot\"",
+      "command": "click",
+      "target": "css=.w-100:nth-child(2) > .btn > .front",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn > .front", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Play vs robot')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "be2c942a-31a0-4f29-a937-9e5bb24817fd",
+      "comment": "Defini o nickname como \"Test\"",
+      "command": "type",
+      "target": "css=.input-xl",
+      "targets": [
+        ["css=.input-xl", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/section/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Test"
+    }, {
+      "id": "40aa0efd-84fb-4e92-b7a0-b0049f16c660",
+      "comment": "Submeti o nickname",
+      "command": "click",
+      "target": "css=.p-3 > .btn",
+      "targets": [
+        ["css=.p-3 > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/footer/button", "xpath:idRelative"],
+        ["xpath=//footer/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "72c11efa-1085-4ff6-a372-9731ee139d73",
+      "comment": "Selecionei a opção \"Abort game\"",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//span/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Abort game')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "99c386ef-7564-4cf8-8b58-9dcec9db9336",
+      "comment": "Confirmei a opção \"Abort game\"",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp1']/div/div/app-confirm-leave-dialog/app-dialog-layout/div/footer/button[2]", "xpath:idRelative"],
+        ["xpath=//footer/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9d404529-df0b-45f9-9ab7-4752a53609f3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["59addf67-9e1f-4f5b-84ce-ea417c8d4187"]
+  }],
+  "urls": ["https://papergames.io/", "https://papergames.io/en/battleship"],
+  "plugins": []
+}
