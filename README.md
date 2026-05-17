@@ -7,6 +7,9 @@
 - Tiago Pires, IGE-123016
 
 ---
+## Youtube Video
+
+https://youtu.be/gAYSZcxyqaQ
 
 ## Product Backlog: Batalha Naval Online (Papergames Style)
 
